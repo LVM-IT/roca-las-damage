@@ -1,0 +1,32 @@
+<div class="listing-header">
+  <h2>Bestand</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="partner-portfolio">
+      <ul class="nav nav-tabs" role="tablist">
+        <li><a href="#contracts" class="kbd" role="tab" data-toggle="tab">Verträge ({{ contracts.length }})</a></li>
+        <li><a href="#proposals" class="kbd" role="tab" data-toggle="tab">Anträge ({{ proposals.length }})</a></li>
+        <li><a href="#offers" class="kbd" role="tab" data-toggle="tab">Angebote ({{ offers.length }})</a></li>
+      </ul>
+
+      <div>
+        <div id="contracts" class="tab-pane">
+          {{> contracts }}
+        </div>
+
+        <div id="proposals" class="tab-pane">
+          {{> proposals }}
+        </div>
+
+        <div id="offers" class="tab-pane">
+          {{> offers }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="table-responsive">
+  <table class="portfolio-overview table">
+    <thead>
+      <tr>
+        <th class="sort" data-sort="col-portfolio-branch">Sparte</th>
+        <th class="sort text-right" data-sort="col-portfolio-payment-amount">Beitrag</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{# proposals }}
+      <tr>
+        <td class="col-portfolio-branch">
+          <i class="{{ icon }}"></i>
+          <span class="branch-selector-item-caption">{{ branch }}</span>
+        </td>
+        <td class="col-portfolio-payment-amount text-right">{{ formattedFee }}</td>
+      </tr>
+      {{/ proposals }}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,52 @@
+<div class="customer-card-wrapper">
+    <div class="container">
+        <article data-accordion="active" class="customer-card h-card accordion">
+            <div class="accordion-title">
+                <div class="customer-card-name">
+                    <a href="{{ partner._links.self.href }}" class="customer-card-name-link" data-pjax="active">
+                        <span class="p-name">{{ partner.honorific }} {{ partner.firstName }} {{ partner.name }}</span>
+                    </a>
+                    <span class="customer-card-flags">
+                        <a href="#" class="customer-card-flag" data-toggle="popover" data-placement="bottom" data-content="Es liegt noch keine Einverständniserklärung für den Kontakt per Telefon und E-Mail zur Akquise vor.">AQ</a>
+                        <a href="#" class="customer-card-flag" data-toggle="popover" data-placement="bottom" data-content="Großkunde">GK</a>
+                        <a href="#" class="customer-card-flag" data-toggle="popover" data-placement="bottom" data-content="Der Kunde ist Nutzer des Onlineservices Meine LVM.">WEB</a>
+                    </span>
+                </div>
+                {{>portfolio_shelf}}
+                <div class="customer-card-drawer dropdown">
+                    <button class="customer-card-drawer-btn dropdown-toggle" type="button" id="customer-card-drawer-btn-id" data-toggle="dropdown" data-bubble="4">
+                        <i class="icon-id-2-filled"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="customer-card-drawer-btn-id">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kundenarchiv</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kundenablage</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Termine (2)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Notizen (1)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Aktueller Hinweis (1)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Korrespondenz</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">EVB</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Zahlungsverkehr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="customer-card-details">
+                <div class="customer-card-contact">
+                    <p class="p-street-address">{{ partner.address.street }}</p>
+                    <p>
+                        <span class="p-postal-code">{{ partner.address.postcode }}</span>
+                        <span class="p-locality">{{ partner.address.city }}</span>
+                    </p>
+                    <a href="tel:{{ partner.telnummer }}">
+                        <i class="navbar-icon icon-call-1-filled"></i>
+                        <span class="p-tel">{{ partner.phone }}</span>
+                    </a>
+                </div>
+                <div class="customer-card-misc">
+                    <p>{{ partner.age }} Jahre, geb. am <span class="dt-bday">{{ partner.dob }}</span></p>
+                    <p>{{ partner.personalStatus }}, {{ partner.childrenCount }}</p>
+                    <p class="p-job-title">{{ partner.job }}</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

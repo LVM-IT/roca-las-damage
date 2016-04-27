@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LVM LAS ROCA</title>
+    <meta name="description" content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/application.css">
+  </head>
+
+  <body>
+    {{> nav }}
+    {{# partner }}
+      <div data-position="sticky">
+        {{> customer_card }}
+        {{> branches }}
+      </div>
+    {{/ partner }}
+
+    <div id="pjax-container">
+      {{{ yield }}}
+    </div>
+
+    <script src="/assets/application.js"></script>
+  </body>
+</html>

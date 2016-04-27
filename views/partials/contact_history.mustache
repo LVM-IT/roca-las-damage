@@ -1,0 +1,22 @@
+<div class="contact-history">
+    <div class="listing-header">
+        <h2>Kontakthistorie</h2>
+    </div>
+    <ol class="contact-history-entries">
+      {{# contacts }}
+      <li>
+        <div class="entry">
+          <span class="contact-history-entry-type"><i data-toggle="tooltip" title="" class="{{ icon }}" data-original-title="Termin"></i>&nbsp;{{ type }}</span>
+          <time class="contact-history-entry-date" datetime="{{ date }}">{{ formattedDate }}</time>
+          {{# advisor }}
+          <span class="contact-history-entry-clerk">{{ advisor }}</span>
+          {{/ advisor }}
+          <p class="contact-history-entry-subject">{{ title }}
+        </div>
+      </li>
+    {{/ contacts }}
+    </ol>
+    <div class="contact-history-more-entries">
+        <a href="#">Weitere anzeigen</a>
+    </div>
+</div>

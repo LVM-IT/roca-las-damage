@@ -1,0 +1,9 @@
+# Track directories with a .keep file
+!*.keep
+
+.vagrant
+/node_modules
+/.eslintcache
+
+# Ignore generated assets
+public

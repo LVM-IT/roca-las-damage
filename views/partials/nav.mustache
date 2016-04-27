@@ -1,0 +1,61 @@
+<nav class="navbar topbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topnav">
+                <i class="icon-list-1-filled"></i>
+                Menü
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/lvm-logo.svg" alt="LVM-Logo" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="topnav">
+            <ul class="nav navbar-nav nav-main-links">
+                <li>
+                    <a href="#">
+                        <i class="navbar-icon icon-add-1-filled"></i>
+                        Neuer Kunde
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="call-incoming">
+                        <i class="navbar-icon icon-call-1-filled"></i>
+                        Kunde öffnen
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="navbar-form" role="search">
+                        <div class="form-group">
+                            <input type="search" class="navbar-search-control form-control" placeholder="Suchen">
+                            <button type="submit" class="navbar-search-btn btn btn-link">
+                                <i class="icon-magnifier-filled"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <a href="{{ postbox_url }}/m50000/messages" class="notification-menu" id="postbox-link" data-error-msg="Briefkasten zurzeit nicht erreichbar!">
+                        <span class="topbar-notifications icon-mail-2-filled icon-lg"></span>
+                        <span class="topbar-notifications-label">Benachrichtigungen</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle topbar-user-link" data-toggle="dropdown">
+                        <span class="topbar-user icon-user-2-filled"></span>
+                        <span class="topbar-user-label">Thomas Müller</span>
+                        <span class="icon-arrow-65-filled"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Einstellungen</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Abmelden</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

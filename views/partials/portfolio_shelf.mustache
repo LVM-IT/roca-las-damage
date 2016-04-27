@@ -1,0 +1,30 @@
+<ul class="customer-card-portfolio">
+  <li class="customer-card-portfolio-item">
+    <a href="{{ partner._links.offers.href }}" class="customer-card-portfolio-item-link" data-pjax="active">
+      Angebote <span class="customer-card-portfolio-item-quantity">({{ offers.length }})</span>
+    </a>
+  </li>
+  <li class="customer-card-portfolio-item">
+    <a href="{{ partner._links.proposals.href }}" class="customer-card-portfolio-item-link" data-pjax="active">
+      Anträge <span class="customer-card-portfolio-item-quantity">({{ proposals.length }})</span>
+    </a>
+  </li>
+  <li class="customer-card-portfolio-item">
+    <a href="{{ partner._links.contracts.href }}" class="customer-card-portfolio-item-link" data-pjax="active">
+      Verträge <span class="customer-card-portfolio-item-quantity">({{ contracts.length }})</span>
+    </a>
+  </li>
+  <li class="customer-card-portfolio-item">
+    <a href="#" class="customer-card-portfolio-item-link collection-preview"
+                data-popover-content="#portfolio-item-popover-claims">
+      Schäden <span class="customer-card-portfolio-item-quantity"></span>
+    </a>
+  </li>
+</ul>
+
+<div class="collection-excerpt" id="portfolio-item-popover-claims">
+  <h3 class="collection-excerpt-title">
+    Schnellansicht
+    <a href="#" class="collection-link">Alle anzeigen</a></h3>
+  <p>N/A</p>
+</div>
