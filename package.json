@@ -27,7 +27,7 @@
     "less": "^2.6.0",
     "less-plugin-clean-css": "^1.5.1",
     "less-plugin-npm-import": "^2.1.0",
-    "lvm-las-assets": "git+https://2dbeae95a72231d3114bfe96eb4e18c31a6f2ef3:x-oauth-basic@github.com/innoq/lvm-las-assets.git",
+    "lvm-las-assets": "LVM-IT/roca-las-assets",
     "mustache": "^2.2.1",
     "nodemon": "^1.9.1",
     "npm": "^3.7.3",
