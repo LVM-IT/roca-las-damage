@@ -1,7 +1,8 @@
 {
   "engines": {
     "node": "5.5.0"
-  },
+  }
+  "license": "MIT",
   "scripts": {
     "postinstall": "npm run compile",
     "server": "nodemon -e js,mustache,json -L --use-strict .",
