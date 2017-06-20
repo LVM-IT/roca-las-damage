@@ -1,5 +1,7 @@
 # RoCA LAS Damage
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LVM-IT/roca-las-damage.svg)](https://greenkeeper.io/)
+
 ## Prerequisites
 
 ```
